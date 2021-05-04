@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["/src/components/*"],
+      "lib/*": ["/src/lib/*"],
+      "src/*": ["/src/*"],
+      "public/*": ["/public/*"],
+      "data/*": ["/src/data/*"],
+      "context/*": ["/src/context/*"],
+      "hooks/*": ["/src/hooks/*"],
+      "routers/*": ["/src/routers/*"],
+      "reducers/*": ["/src/reducers/*"],
+      "includes/*": ["/src/includes/*"]
+    },
+    "module": "commonjs",
+    "target": "es2016", //modern
+    "lib": ["ES2016", "DOM"], // modern
+    // "target": "ES2015", // fallback
+    // "lib": ["ES2015", "DOM"], // fallback
+    //  "target": "ES2020", // NODE
+    // "lib": ["es2020", "DOM"], // NODE
+    // "lib": ["ESNext", "DOM"], // experimentalexperimental
+    // "target": "ESNext", //experimental
+    "jsx": "preserve",
+    "strictFunctionTypes": true,
+    // "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "listFiles": true
+  },
+  "include": [".", "src/**/*"],
+  "exclude": [
+    "node_modules",
+    "__screenshots__",
+    "log",
+    "uploads",
+    ".next",
+    ".git",
+    "out",
+    "static",
+    "stroybook-static",
+    "build",
+    "coverage",
+    "dist",
+    "lib"
+  ]
+}
