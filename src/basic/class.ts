@@ -1,4 +1,4 @@
-class House {
+export class House {
   zimmer: number
   qm: number
   balkon: boolean
@@ -19,7 +19,7 @@ var myHouse:House = new House(50,600,true)
 console.log(myHouse)
 console.log(myHouse.preis())
 
-class Dog  {
+export class Dog  {
   constructor(name: string) {
      this.name =name
 
@@ -31,7 +31,7 @@ class Dog  {
   }
 }
 
-class Breed extends Dog {
+export class Breed extends Dog {
  breed:string
   constructor(name:string,breed: string) {
     super(breed)
@@ -43,7 +43,7 @@ class Breed extends Dog {
  }
 }
 
-class Bully extends Breed {
+export class Bully extends Breed {
   legs:number =6
 }
 

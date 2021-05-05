@@ -2,10 +2,10 @@ let numb: number = 40
 let str : string = 'String'
 let myArray: number[] = [412, 23, 5456]
 
-class MyDog {
+export class MyDog {
   name: string
   legs:number
-    constructor(name) {
+    constructor(name:string) {
         this.legs = 4;
         this.name = name;
     }
@@ -33,6 +33,7 @@ function id<T>(param: T): T {
 let container: Container<MyDog,number> = new Container<MyDog, number>()
 container.elements = [new MyDog('Rex')]
 container.num = 4
+
 console.log(container.publicBark(0))
 console.log(container.num)
 console.log(id<number>(40))

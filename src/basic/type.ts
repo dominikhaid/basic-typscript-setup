@@ -4,7 +4,7 @@ var num:number = 1985
 console.log(num)
 var bool:boolean = true
 console.log(bool)
-var bool2:boolean = null
+var bool2:boolean = null // => error
 console.log(bool2)
 var any:any= 'Null' + 123
 console.log(any)

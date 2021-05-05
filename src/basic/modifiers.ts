@@ -1,4 +1,4 @@
-class Tree {
+export class Tree {
   public height: number = 5
   protected age: number = 10
   private something: number = 10

@@ -1,4 +1,4 @@
-interface Lion {
+export interface Lion {
  name:string
   run: () => void
 }
@@ -9,7 +9,7 @@ interface SlowLion {
 
 class LionKing implements Lion, SlowLion {
   constructor(name: string) {
-    name : this.name
+    this.name = name
   }
   name: string
   run = (): void => {
