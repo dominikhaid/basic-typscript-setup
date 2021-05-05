@@ -1,3 +1,6 @@
+# Basic Typescript - examples
+
+Some basic ts definitions and examples.
 
 ## Links 
 
