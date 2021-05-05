@@ -1,9 +1,11 @@
-let sym: Symbol = Symbol('key')
-let sym2: Symbol = Symbol('key')
-let obj = {
-  [sym2]: 'Wert 2'
-}
-obj[sym]= () => 'Wert'
-console.log(sym === sym2)
-console.log(obj[sym]())
-console.log(obj[sym2])
+export const sym = Symbol('key');
+const sym2 = Symbol('key');
+const obj = {
+  [sym]: () => 'Wert 2',
+  [sym2]: 'Wert 2',
+};
+
+obj[sym2] = 'Wert';
+
+console.log(obj[sym]());
+console.log(obj[sym2]);

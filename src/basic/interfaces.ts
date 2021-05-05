@@ -1,25 +1,25 @@
 export interface Lion {
- name:string
-  run: () => void
+  name: string;
+  run: () => void;
 }
 
 interface SlowLion {
-  walk: () => void
+  walk: () => void;
 }
 
 class LionKing implements Lion, SlowLion {
   constructor(name: string) {
-    this.name = name
+    this.name = name;
   }
-  name: string
+  name: string;
   run = (): void => {
-    console.log(`${this.name} runs fast and roos loudly`)
-  }
+    console.log(`${this.name} runs fast and roos loudly`);
+  };
   walk = (): void => {
-    console.log(`${this.name} walks silently`)
-  }
+    console.log(`${this.name} walks silently`);
+  };
 }
 
-let lionKing = new LionKing('Simba')
-lionKing.run()
-lionKing.walk()
+const lionKing = new LionKing('Simba');
+lionKing.run();
+lionKing.walk();

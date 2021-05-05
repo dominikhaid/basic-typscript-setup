@@ -1,16 +1,24 @@
-var msg:string = 'Hello World!'
-console.log(msg)
-var num:number = 1985
-console.log(num)
-var bool:boolean = true
-console.log(bool)
-var bool2:boolean = null // => error
-console.log(bool2)
-var any:any= 'Null' + 123
-console.log(any)
-let zahl = (zahl: number): void => { return }
-zahl(42)
-function zahl2(zahl: number): Boolean {
-  return zahl < 40
+export const msg = 'Hello World!';
+console.log(msg);
+
+const num = 1985;
+console.log(num);
+
+const bool = true;
+console.log(bool);
+
+const any: any = 'Null' + 123;
+console.log(any);
+
+const zahl = (z: number): void => {
+  console.log(z);
+  return;
+};
+
+zahl(42);
+
+function zahl2(z: number): boolean {
+  return z < 40;
 }
-zahl2(42)
+
+zahl2(42);

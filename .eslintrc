@@ -1,6 +1,12 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks",
+    "react",
+    "import",
+    "prettier"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -9,6 +15,7 @@
   ],
   "settings": {
     "import/resolver": {
+      "typescript": {},
       "alias": {
         "map": [
           ["components", "./src/components"],
@@ -33,6 +40,10 @@
           ".scss"
         ]
       }
+    },
+    "react": {
+      "pragma": "React",
+      "version": "detect"
     }
   },
   "parserOptions": {
@@ -49,7 +60,26 @@
     "jest": true
   },
   "rules": {
-    "no-console": 1,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "js": "never",
+        "jsx": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-console": 0,
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": ["warn", {"extensions": [".tsx"]}],
     "linebreak-style": ["error", "unix"]
   },
   "globals": {

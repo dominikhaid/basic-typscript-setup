@@ -1,7 +1,7 @@
-class Wave {
-  size:number =50
-  static element:string = 'Water'
+export class Wave {
+  size = 50;
+  static element = 'Water';
 }
 
-let bigWave = new Wave()
-console.log(bigWave,Wave.element)
+const bigWave = new Wave();
+console.log(bigWave, Wave.element);
