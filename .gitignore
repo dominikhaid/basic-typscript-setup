@@ -1,0 +1,26 @@
+# .env.development
+# .env.production
+.next
+**/build
+/node_modules
+**/samples
+**/certificates
+/docker-backups
+**/node_modules
+.editorconfig
+**/debug.log
+package-lock.json
+out
+**/storybook-static
+**/log/.*log
+.editorconfig
+**.log
+log/access.log
+**.lock
+public/icons
+todo.md
+src/bak
+public/**/*[_][0-9][0-9][0-9][_][0-9][0-9]*.jpg
+public/**/*[_][0-9][0-9][0-9][0-9][_][0-9][0-9]*.jpg
+public/**/*[_][0-9][0-9][0-9][_][0-9][0-9]*.png
+public/**/*[_][0-9][0-9][0-9][0-9][_][0-9][0-9]*.png

@@ -1,0 +1,7 @@
+node_modules
+.vscode
+gitignore
+log
+uploads
+public/images
+public/icons

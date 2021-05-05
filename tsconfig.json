@@ -1,6 +1,52 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "listFiles": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": [
+    ".",
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "__screenshots__",
+    "log",
+    "uploads",
+    ".next",
+    ".git",
+    "out",
+    "static",
+    "stroybook-static",
+    "build",
+    "coverage",
+    "dist",
+    "lib"
+  ]
+}
+{
+  "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "components/*": ["/src/components/*"],
       "lib/*": ["/src/lib/*"],
